@@ -1,0 +1,80 @@
+.App {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+table {
+    color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 80rem;
+}
+
+thead {
+    background-color: #000000;
+    border-bottom: 1px solid #fafafa;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffffc3;
+    color: #000;
+}
+
+/* style.css */
+.refresh-icon {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.refresh-icon:hover {
+
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    th {
+        font-size: 16px;
+    }
+}
